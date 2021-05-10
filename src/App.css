@@ -1,38 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 .App {
-  text-align: center;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin-top: 80px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container .items {
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 8px;
+  width: 21%;
+  margin: 8px 0;
+}
+.container .items h3 {
+  margin: 5px 5px;
+  font-size: 18px;
+  height: 60px;
+}
+.container .items h3:hover {
+  cursor: pointer;
+  color: #528d00;
+}
+.container .items img {
+  border-radius: 5px;
+  width: 90%;
+  margin: 3px 0;
+}
+.container .items p {
+  color: black;
+}
+.container .items p span {
+  cursor: pointer;
+  color: #528d00;
+  font-weight: 500;
+}
+/* Header */
+.header {
+  position: relative;
+  background: black;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.header ul {
+  width: 100%;
+  display: inline-block;
+}
+.header ul li {
+  display: inline-block;
+  margin: 0 15px;
+  width: 120px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.header ul li a {
+  text-decoration: none;
   color: white;
+  transition: 0.5s ease-in-out;
+}
+.header ul li a:hover {
+  color: rgb(6, 177, 6);
+}
+form {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 30px;
+}
+.search-form input {
+  padding-left: 20px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid rgb(179, 177, 177);
+  border-radius: 8px;
+  outline: none;
+}
+form .icon {
+  position: absolute;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  top: -5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: black;
+  transition: 0.5s ease-in-out;
+}
+form .icon::before {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: transparent;
+}
+form .icon::after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: 25px;
+  width: 1px;
+  height: 13px;
+  color: white;
+  background: white;
+  transform: rotate(315deg);
 }
 
-.App-link {
-  color: #61dafb;
+/* Footer */
+.footer {
+  position: relative;
+  height: 60px;
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer nav ul {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 20px;
+}
+.footer nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer nav ul li a {
+  color: grey;
+  font-size: 20px;
+}
+.footer nav ul li a i {
+  transition: 0.35s ease-in-out;
+}
+.footer nav ul li a:hover .fa-facebook {
+  color: blue;
+}
+.footer nav ul li a:hover .fa-twitter {
+  color: aqua;
+}
+.footer nav ul li a:hover .fa-youtube {
+  color: red;
+}
+.footer nav ul li a:hover .fa-instagram {
+  color: #e1306c;
 }
