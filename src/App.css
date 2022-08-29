@@ -1,49 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 .App {
   box-sizing: border-box;
 }
+
+img {
+  pointer-events: none;
+}
+
+.title-main {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 40px 0 0 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #528d00;
+  border-radius: 150px;
+}
+
 .container {
-  margin-top: 80px;
+  position: relative;
+  padding-top: 40px;
   width: 100%;
   display: flex;
+
   text-align: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
 .container .items {
   border: 1px solid rgb(202, 202, 202);
   border-radius: 8px;
   width: 21%;
   margin: 8px 0;
 }
+
 .container .items h3 {
   margin: 5px 5px;
   font-size: 18px;
   height: 60px;
 }
+
 .container .items h3:hover {
   cursor: pointer;
   color: #528d00;
 }
+
 .container .items img {
   border-radius: 5px;
   width: 90%;
   margin: 3px 0;
 }
+
 .container .items p {
   color: black;
 }
+
 .container .items p span {
   cursor: pointer;
   color: #528d00;
   font-weight: 500;
 }
+
 /* Header */
 .header {
   position: relative;
@@ -55,10 +91,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .header ul {
   width: 100%;
   display: inline-block;
 }
+
 .header ul li {
   display: inline-block;
   margin: 0 15px;
@@ -72,15 +110,18 @@
   color: white;
   transition: 0.5s ease-in-out;
 }
+
 .header ul li a:hover {
   color: rgb(6, 177, 6);
 }
+
 form {
   position: relative;
   top: 0;
   left: 0;
   margin-left: 30px;
 }
+
 .search-form input {
   padding-left: 20px;
   width: 200px;
@@ -89,6 +130,7 @@ form {
   border-radius: 8px;
   outline: none;
 }
+
 form .icon {
   position: absolute;
   margin-left: 10px;
@@ -102,6 +144,7 @@ form .icon {
   background: black;
   transition: 0.5s ease-in-out;
 }
+
 form .icon::before {
   position: absolute;
   content: "";
@@ -113,6 +156,7 @@ form .icon::before {
   border: 1px solid white;
   background: transparent;
 }
+
 form .icon::after {
   position: absolute;
   content: "";
@@ -131,33 +175,69 @@ form .icon::after {
   height: 60px;
   width: 100%;
 }
-.footer nav ul {
-  position: absolute;
+
+
+
+
+.overlay.active {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  animation: blowUpModal .25s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+@keyframes blowUpModal {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bx-x {
+  font-size: 24px;
+}
+
+.footer {
+  margin: 40px 0;
   display: flex;
   align-items: center;
-  height: 100%;
-  margin-left: 20px;
+  justify-content: space-evenly;
 }
-.footer nav ul li {
-  display: inline-block;
-  margin: 0 10px;
+
+.social {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
 }
-.footer nav ul li a {
-  color: grey;
-  font-size: 20px;
+
+.list-item {
+  margin-top: 12px;
 }
-.footer nav ul li a i {
-  transition: 0.35s ease-in-out;
+
+.list-item li {
+  list-style: none;
 }
-.footer nav ul li a:hover .fa-facebook {
-  color: blue;
+
+.list-item li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
-.footer nav ul li a:hover .fa-twitter {
-  color: aqua;
+
+.list-item li a i {
+  padding-right: 8px;
+  font-size: 24px;
+  color: black;
 }
-.footer nav ul li a:hover .fa-youtube {
-  color: red;
-}
-.footer nav ul li a:hover .fa-instagram {
-  color: #e1306c;
+
+.nav span {
+  font-size: 24px;
+  font-weight: 600;
 }

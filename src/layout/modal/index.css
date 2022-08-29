@@ -1,0 +1,150 @@
+.modal {
+    display: none;
+}
+
+.modal.active {
+    display: table;
+    width: 50%;
+    border-radius: 4px;
+    background: rgb(240, 240, 240);
+    position: fixed;
+    top: 6%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 24px;
+    margin: 0 auto;
+    transform: scale(1);
+    animation: blowUpModal .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+}
+
+.modal.out {
+    display: block;
+    width: 50%;
+    border-radius: 4px;
+    background: rgb(240, 240, 240);
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 24px;
+    margin: 0 auto;
+    transform: scale(0);
+    animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+@keyframes blowUpModal {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes blowUpModalTwo {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.close {
+    position: absolute;
+    color: black;
+    right: 24px;
+    top: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.box-product {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 24px;
+}
+
+.image-food {
+    min-width: 400px;
+    border-radius: 8px;
+    padding-right: 32px;
+}
+
+.image-food img {
+    border-radius: inherit;
+    height: auto;
+    width: 100%;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 24px;
+    color: #528d00;
+    text-align: initial;
+}
+
+.content-food {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box-ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-ingredient {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.ingredient {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: initial;
+    display: flex;
+    align-items: start;
+    padding: 4px 0;
+}
+
+.index {
+    min-width: 24px;
+    font-weight: 700;
+}
+
+.box-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow-y: scroll;
+    height: 85vh;
+}
+
+.text-make {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.making {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lorem {
+    text-align: initial;
+    font-size: 20px;
+    font-weight: 500;
+}
