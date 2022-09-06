@@ -1,29 +1,48 @@
 .contact {
-    margin: 60px 0;
-    background: #f2fde2;
+    background: #b5d9a5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 68px 0 74px 0;
+}
+
+.lorem-contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text {
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 600;
+    font-family: Signika, serif;
+}
+
+.sub-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    margin: 10px 0;
+}
+
+.btn-view {
+    background: white;
+    padding: 16px 48px;
+    color: #b5d9a5;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* .control-field {
     display: flex;
     align-items: center;
-    padding: 24px 36px;
 }
 
-.img-contact {
-    height: 430px;
-    border-radius: 4px;
-    margin-right: 80px;
-}
-
-.img-contact img {
-    width: auto;
-    height: 100%;
-    border-radius: inherit;
-}
-
-.control-field {
-    display: flex;
-    align-items: center;
-}
-
-.title-contact{
+.title-contact {
     font-size: 28px;
     font-weight: 700;
     padding: 24px 0;
@@ -60,4 +79,4 @@
     color: white;
     font-weight: 700;
     text-decoration: none;
-}
+} */

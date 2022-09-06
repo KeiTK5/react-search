@@ -1,22 +1,67 @@
-.content-about{
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    margin: 0 auto;
-    width: 50%;
-    padding-top: 30px;
-    line-height: 1.6;
+.about {
+    padding-bottom: 100px;
+    background: #f7f5f2 !important;
 }
 
-.main-content{
-    width: 70%;
+.container-about {
+    max-width: 1300px;
     margin: 0 auto;
+}
+
+
+.content-about {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #808285;
+    text-align: center;
+    padding: 0 22% 71px 22%;
+    margin-top: 16px;
+}
+
+.slick-slide {
+    padding: 0 8px;
+}
+
+.slick-dots {
+    bottom: -35px !important;
+    background: #f7f5f2 !important;
+}
+
+.title-main {
+    font-family: Signika, serif;
+    color: #3a3a3a;
+    font-weight: 600;
+    padding-top: 80px !important;
+}
+
+.box-slide {
+    width: 33%;
+    background: white;
+    padding: 40px 57px 58px 57px;
+}
+
+.box-info {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.lorem-about{
-    font-size: 20px;
-    margin: 32px;
-    line-height: 1.6;
+.content-slide {
+    margin: 16px 0;
+}
+
+.box-name {
+    color: #3a3a3a;
+    font-family: Signika, serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.box-role {
+    color: #808285;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
 }

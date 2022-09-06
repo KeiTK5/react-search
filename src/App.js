@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
+import Blog from "./components/blog/Blog";
+
 function App() {
   const APP_ID = "bc19467e";
   const APP_KEY = "b8277441eeefaaed464ee6f0f96f3639";
@@ -52,6 +54,7 @@ function App() {
           <Food key={recipe.recipe.uri.slice(51)} data={recipe.recipe} />
         ))}
       </div>
+      <Blog />
       <Contact />
       <About />
       <Footer />

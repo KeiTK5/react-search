@@ -1,0 +1,92 @@
+.our-blog {
+    background-image: url("https://superfood.qodeinteractive.com/wp-content/uploads/2016/09/cosmetic-back-1.jpg?id=8010");
+    background-repeat: no-repeat;
+    padding: 120px 0;
+}
+
+.box-title {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.main-title {
+    color: #3a3a3a;
+    font-family: Signika, serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.sub-title {
+    margin-top: 16px;
+    color: #808285;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.box-blog {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.box-item {
+    width: 33.333333333%;
+    padding: 16px;
+}
+
+.box-img {
+    width: 100%;
+    pointer-events: none;
+}
+
+.box-img img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle
+}
+
+.box-content {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.span-date {
+    font-size: 12px;
+    color: #9b9da0;
+}
+
+.title-blog {
+    color: #3a3a3a;
+    font-family: Signika, serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 16px;
+}
+
+.describe-blog {
+    color: #9b9da0;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin: 16px 0;
+    font-weight: 400;
+}
+
+.read-more {
+    font-size: 13px;
+    font-family: Signika, serif;
+    font-weight: 600;
+    color: #808285;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
